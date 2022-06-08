@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-todolist/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n    box-sizing: border-box;\\n    margin: 0;\\n}\\n#header {\\n    height: 55px;\\n    background-color: #db4c3f;\\n    padding: 0 15px;\\n    display: flex;\\n    justify-content: space-between;\\n}\\n#header button {\\n    padding: 0;\\n    height: 25px;\\n    width: 25px;\\n    border-style: none;\\n    margin : 15px 10px;\\n}\\n#userbutton {\\n    border-radius: 100%;\\n    vertical-align:top;\\n}\\n\\n.maindiv {\\n    display: flex;\\n    height: 94vh;\\n}\\n\\n.maincontent {\\n    width: 80vw;\\n}\\n#sidebar{\\n    width: 20vw;\\n    display: flex;\\n    flex-direction: column;\\n    padding: 1vw 1vw;\\n    gap: 20px;\\n    background-color: #F5F5F5;\\n}\\n\\n#sidebar div{\\n    display: flex;\\n    width: 17vw;\\n    text-align: justify;\\n    justify-content: space-between;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-todolist/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ headertabs)\n/* harmony export */ });\nfunction headertabs() {\n    const headertab = document.getElementById(\"header\")\n    const lefttab = document.createElement(\"div\");\n    let sidebaropen = document.createElement(\"button\")\n    sidebaropen.innerHTML = '<img src=\"../img/three-dash.png\"></img>'\n    lefttab.appendChild(sidebaropen)\n    let homebutton = document.createElement(\"button\")\n    homebutton.innerHTML = '<img src=\"../img/home.png\"></img>'\n    lefttab.appendChild(homebutton)\n    const righttab = document.createElement(\"div\");\n    let addnew = document.createElement(\"button\")\n    addnew.innerHTML = '<img src=\"../img/add-new.png\"></img>'\n    righttab.appendChild(addnew)\n    let username = document.createElement(\"button\")\n    username.innerText = \"RL\";\n    username.setAttribute(\"id\",\"userbutton\")\n    righttab.appendChild(username)\n    headertab.appendChild(lefttab)\n    headertab.appendChild(righttab)\n\n}\n\n//# sourceURL=webpack://odin-todolist/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://odin-todolist/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _sidebar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sidebar.js */ \"./src/sidebar.js\");\n\n\n\n\n\nfunction createdefault() {\n    const content = document.createElement(\"div\")\n    content.appendChild(createheader())\n    content.appendChild(createmaindiv())\n    return content\n\n}\n\nfunction createheader() {\n    const header = document.createElement(\"div\")\n    header.setAttribute(\"id\",\"header\")\n    return header\n}\nfunction createmaindiv() {\n    const maindiv = document.createElement(\"div\")\n    maindiv.classList.add(\"maindiv\")\n    maindiv.appendChild(createsidebar())\n    maindiv.appendChild(createmaincontent())\n\n    return maindiv\n}\nfunction createsidebar() {\n    const sidebar = document.createElement(\"div\")\n    sidebar.setAttribute(\"id\", \"sidebar\")\n    return sidebar\n}\n\nfunction createmaincontent() {\n    const maincontent = document.createElement(\"div\")\n    maincontent.classList.add(\"maincontent\")\n    return maincontent\n}\n\ndocument.body.appendChild(createdefault());\n(0,_sidebar_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_header_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://odin-todolist/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/sidebar.js":
+/*!************************!*\
+  !*** ./src/sidebar.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ sidebartabs)\n/* harmony export */ });\nlet count = 0 \nfunction sidebartabs(){\n    const sidebartabs = document.getElementById(\"sidebar\")\n    const inbox = document.createElement(\"div\")\n    inbox.addEventListener(\"click\", function() {\n        count++\n        score.innerHTML = count;\n        score2.innerHTML = count;\n        score3.innerHTML = count;\n    })\n    inbox.innerText= `Inbox`;\n    const score = document.createElement(\"p\")\n    score.innerHTML = count;\n    inbox.appendChild(score)\n    const today = document.createElement(\"div\")\n    today.addEventListener(\"click\", function() {\n        count++\n        score.innerHTML = count;\n        score2.innerHTML = count;\n        score3.innerHTML = count;\n    })\n    today.innerText = `Today`;\n    const score2 = document.createElement(\"p\")\n    score2.innerHTML = count;\n    today.appendChild(score2)\n    const finished = document.createElement(\"div\")\n    finished.addEventListener(\"click\", function() {\n        count++\n        score.innerHTML = count;\n        score2.innerHTML = count;\n        score3.innerHTML = count;\n    })\n    finished.innerText = `Finished`;\n    const score3 = document.createElement(\"p\")\n    score3.innerHTML = count;\n    finished.appendChild(score3)\n    sidebartabs.appendChild(inbox)\n    sidebartabs.appendChild(today)\n    sidebartabs.appendChild(finished);\n\n    return sidebartabs\n}\n\n//# sourceURL=webpack://odin-todolist/./src/sidebar.js?");
 
 /***/ })
 
@@ -197,7 +217,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	__webpack_require__("./src/index.js");
+/******/ 	__webpack_require__("./src/sidebar.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/header.js");
 /******/ 	
 /******/ })()
 ;

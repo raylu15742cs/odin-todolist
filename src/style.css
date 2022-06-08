@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+#header {
+    height: 55px;
+    background-color: #db4c3f;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#header button {
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    border-style: none;
+    margin : 15px 10px;
+}
+#userbutton {
+    border-radius: 100%;
+    vertical-align:top;
+}
+
+.maindiv {
+    display: flex;
+    height: 94vh;
+}
+
+.maincontent {
+    width: 80vw;
+}
+#sidebar{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 1vw;
+    gap: 20px;
+    background-color: #F5F5F5;
+}
+
+#sidebar div{
+    display: flex;
+    width: 17vw;
+    text-align: justify;
+    justify-content: space-between;
+}
