@@ -46,3 +46,7 @@ body {
     text-align: justify;
     justify-content: space-between;
 }
+#maincontent {
+    text-align: center;
+    width: 80vw;
+}
