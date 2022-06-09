@@ -18,7 +18,7 @@ function createheader() {
 }
 function createmaindiv() {
     const maindiv = document.createElement("div")
-    maindiv.classList.add("maindiv")
+    maindiv.setAttribute("id", "maindiv")
     maindiv.appendChild(createsidebar())
     maindiv.appendChild(createmaincontent())
 

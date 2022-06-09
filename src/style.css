@@ -1,6 +1,8 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+}
+body {
+    height: 100vh
 }
 #header {
     height: 55px;
@@ -17,13 +19,13 @@
     margin : 15px 10px;
 }
 #userbutton {
-    border-radius: 100%;
+    border-radius: 80%;
     vertical-align:top;
 }
 
-.maindiv {
+#maindiv {
     display: flex;
-    height: 94vh;
+    height: calc(100vh - 55px);
 }
 
 .maincontent {
@@ -33,14 +35,14 @@
     width: 20vw;
     display: flex;
     flex-direction: column;
-    padding: 1vw 1vw;
-    gap: 20px;
+    padding: 4vh 2vw 0 2vw;
+    gap: 1vh;
     background-color: #F5F5F5;
 }
 
 #sidebar div{
     display: flex;
-    width: 17vw;
+    width: 12vw;
     text-align: justify;
     justify-content: space-between;
 }
