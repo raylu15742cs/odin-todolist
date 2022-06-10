@@ -1,3 +1,4 @@
+import createtodos from "./maincontent";
 import sidebartabs from "./sidebar";
 
 export default function headertabs() {
@@ -14,6 +15,7 @@ export default function headertabs() {
     const righttab = document.createElement("div");
     let addnew = document.createElement("button")
     addnew.innerHTML = '<img src="../img/add-new.png"></img>'
+    addnew.addEventListener("click", createtodos)
     righttab.appendChild(addnew)
     let username = document.createElement("button")
     username.innerText = "RL";
