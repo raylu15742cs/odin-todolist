@@ -37,8 +37,8 @@ let sidebarcontrol = function() {
     let main = document.getElementById("maincontent")
     if(count%2 != 0) {
         hider.style.visibility = 'visible';
-        main.style.width = "80vw";
-        hider.style.width = "20vw";
+        main.style.width = "85vw";
+        hider.style.width = "15vw";
         hider.style.padding = "4vh 2vw 0 2vw"
         count++;
     } else {

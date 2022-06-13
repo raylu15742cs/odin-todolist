@@ -27,12 +27,8 @@ body {
     display: flex;
     height: calc(100vh - 55px);
 }
-
-.maincontent {
-    width: 80vw;
-}
 #sidebar{
-    width: 20vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     padding: 4vh 2vw 0 2vw;
@@ -47,6 +43,35 @@ body {
     justify-content: space-between;
 }
 #maincontent {
-    text-align: center;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    padding: 1vw 5vw;
+}
+
+form {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 15px;
+    justify-self: center;
+    align-self:center ;
+}
+#taskname {
+    width: 195px;
+}
+#submit {
+    margin: 0 170px;
+}
+
+#taskname , select , textarea, #submit{
+    margin-bottom: 10px;
+}
+textarea {
+    width: 400px;
+}
+.todos {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }

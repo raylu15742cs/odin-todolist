@@ -33,7 +33,9 @@ function createsidebar() {
 function createmaincontent() {
     const maincontent = document.createElement("div")
     maincontent.setAttribute("id", "maincontent")
-    maincontent.innerHTML = "hi";
+    const maincontenttext = document.createElement("div")
+    maincontenttext.setAttribute("id", "maincontenttext")
+    maincontent.appendChild(maincontenttext)
     return maincontent
 }
 
