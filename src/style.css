@@ -1,77 +1,80 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 body {
-    height: 100vh
+  height: 100vh;
 }
 #header {
-    height: 55px;
-    background-color: #db4c3f;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
+  height: 55px;
+  background-color: #db4c3f;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 #header button {
-    padding: 0;
-    height: 25px;
-    width: 25px;
-    border-style: none;
-    margin : 15px 10px;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  border-style: none;
+  margin: 15px 10px;
 }
 #userbutton {
-    border-radius: 80%;
-    vertical-align:top;
+  border-radius: 80%;
+  vertical-align: top;
 }
 
 #maindiv {
-    display: flex;
-    height: calc(100vh - 55px);
+  display: flex;
+  height: calc(100vh - 55px);
 }
-#sidebar{
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    padding: 4vh 2vw 0 2vw;
-    gap: 1vh;
-    background-color: #F5F5F5;
+#sidebar {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 2vw 0 2vw;
+  gap: 1vh;
+  background-color: #f5f5f5;
 }
 
-#sidebar div{
-    display: flex;
-    width: 12vw;
-    text-align: justify;
-    justify-content: space-between;
+#sidebar div {
+  display: flex;
+  width: 12vw;
+  text-align: justify;
+  justify-content: space-between;
 }
 #maincontent {
-    display: flex;
-    flex-direction: column;
-    width: 85vw;
-    padding: 1vw 5vw;
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  padding: 1vw 5vw;
 }
 
 form {
-    border: 2px solid red;
-    padding: 10px;
-    border-radius: 15px;
-    justify-self: center;
-    align-self:center ;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 15px;
+  justify-self: center;
+  align-self: center;
 }
 #taskname {
-    width: 195px;
+  width: 195px;
 }
 #submit {
-    margin: 0 170px;
+  margin: 0 170px;
 }
 
-#taskname , select , textarea, #submit{
-    margin-bottom: 10px;
+#taskname,
+select,
+textarea,
+#submit {
+  margin-bottom: 10px;
 }
 textarea {
-    width: 400px;
+  width: 400px;
 }
 .todos {
-    border: 2px solid red;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+  border: 2px solid red;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
